@@ -36,9 +36,9 @@ languages.each do |style, langlist|
   langlist.each do |lang, type|
     if newhash[lang]
       newhash[lange][:style] << style
-    else 
+    else
       newhash[lang] = {:type => type[:type], :style => [style]}
     end
-  end 
+  end
   newhash
 end
